@@ -7,4 +7,6 @@
     <dimen name="margenHomeSub">10dp</dimen>
     <dimen name="tamañoSubTitulo">15sp</dimen>
     <dimen name = "altoFoto">150dp</dimen>
+    <dimen name="scheduleTitulo">30sp</dimen>
+    <dimen name="scheduleSub">20sp</dimen>
 </resources>

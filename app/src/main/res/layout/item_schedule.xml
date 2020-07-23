@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/lblHour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="00:00"
+                android:gravity="right|bottom"
+                android:textSize="@dimen/scheduleTitulo"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/lblMeridiano"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A.M"
+                android:gravity="right|top"
+                android:textSize="@dimen/scheduleSub"
+                android:textColor="@color/colorPrimary"
+                />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/lblScheduleConfName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Conferencia name"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:ellipsize="end"
+                android:lines="1"/>
+
+            <TextView
+                android:id="@+id/lblScheduleSpeaker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Speaker Name"
+                android:textSize="15sp"
+                android:textColor="#FFFFF"
+                android:ellipsize="end"
+                android:lines="1"
+
+                />
+            <TextView
+                android:id="@+id/lblScheduleTag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tag"
+                android:ellipsize="end"
+                android:lines="1"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
