@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/radioCard"
+    app:cardElevation="0dp"
+    android:layout_margin="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/altoFoto"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre Speaker"
+            android:textStyle="bold"
+            android:textSize="@dimen/tamañoTitulo"
+            android:textColor="@color/colorPrimaryDark"
+            android:gravity="center_horizontal"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trabajo speaker"
+            android:textSize="@dimen/tamañoSubTitulo"
+            android:textColor="@color/colorAccent"
+            android:gravity="center_horizontal"
+            />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
