@@ -5,10 +5,72 @@
     android:layout_height="match_parent"
     tools:context=".ui.fragments.SpeakersDetailDialogFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      >
+      <ImageView
+          android:layout_marginTop="50dp"
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/altoFoto"
+          android:src="@mipmap/ic_launcher"
+
+          />
+      <TextView
+          android:id="@+id/lblDetailNombreSpeaker"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Nombre Speaker"
+          android:textStyle="bold"
+          android:lines="1"
+          android:gravity="center_horizontal"
+          android:textSize="15sp"
+          android:textColor="@color/colorPrimary"
+          android:layout_margin="5dp"
+          />
+      <TextView
+          android:id="@+id/lblDetailTituloSpeaker"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Titulo"
+          android:lines="1"
+          android:gravity="center_horizontal"
+          android:textSize="12sp"
+          android:layout_margin="5dp"
+          />
+      <TextView
+          android:id="@+id/lblDetailTrabajoSpeaker"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Trabajo"
+          android:lines="1"
+          android:gravity="center_horizontal"
+          android:textSize="12sp"
+          android:layout_margin="5dp"
+          />
+
+      <ImageView
+          android:layout_width="35dp"
+          android:layout_height="35dp"
+          android:layout_gravity="center_horizontal"
+          android:src="@drawable/logo_platzi"
+          />
+
+
+
+      <TextView
+          android:id="@+id/lblDetailDescSpeaker"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="blablabla"
+          android:gravity="center_horizontal"
+          android:textSize="15sp"
+          android:layout_margin="5dp"
+          />
+
+
+
+  </LinearLayout>
 
 </FrameLayout>
