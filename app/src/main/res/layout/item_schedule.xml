@@ -61,9 +61,10 @@
                 android:layout_height="wrap_content"
                 android:text="Speaker Name"
                 android:textSize="15sp"
-                android:textColor="#FFFFF"
+                android:textColor="@color/colorPrimary"
                 android:ellipsize="end"
                 android:lines="1"
+
 
                 />
             <TextView
@@ -73,6 +74,8 @@
                 android:text="Tag"
                 android:ellipsize="end"
                 android:lines="1"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/shape_topico"
                 />
 
 

@@ -63,7 +63,8 @@
                     <LinearLayout
                         android:orientation="vertical"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="match_parent"
+                        >
 
                         <TextView
                             android:id="@+id/lblDetailConference"
@@ -86,17 +87,21 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
                             />
+
                         <TextView
                             android:id="@+id/lblDetailTag"
-                            android:text="Tag"
-                            android:textSize="12sp"
-                            android:textColor="@color/colorPrimary"
-                            android:textStyle="bold"
-                            android:gravity="center_horizontal"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
                             android:layout_margin="5dp"
-                            />
+                            android:gravity="center_horizontal"
+                            android:text="Tag"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/shape_topico"
+                             />
+
                         <TextView
                             android:id="@+id/lblDetailConferenceDescription"
                             android:text="Detalle conferencia"
