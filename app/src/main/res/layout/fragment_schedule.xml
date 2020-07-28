@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.fragments.ScheduleFragment">
+    tools:context=".view.ui.fragments.ScheduleFragment">
 
    <androidx.recyclerview.widget.RecyclerView
        android:id="@+id/listConferencias"
@@ -12,9 +12,10 @@
 
 
    <RelativeLayout
+       android:id="@+id/rlBaseSchedule"
        android:layout_width="match_parent"
        android:layout_height="match_parent">
-      <view
+      <View
           android:layout_width="match_parent"
           android:layout_height="match_parent"
          android:background="@color/colorPrimary"

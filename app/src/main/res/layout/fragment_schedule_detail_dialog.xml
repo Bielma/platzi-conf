@@ -42,6 +42,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"/>
                     <TextView
+                        android:id="@+id/lblDetailConference"
                         android:text="Titulo Conferencia"
                         android:textSize="30sp"
                         android:textColor="#FFFFFF"
@@ -67,7 +68,7 @@
                         >
 
                         <TextView
-                            android:id="@+id/lblDetailConference"
+                            android:id="@+id/lblDetailConferenceHour"
                             android:text="00:00"
                             android:textSize="15sp"
                             android:textColor="@color/colorPrimary"

@@ -1,4 +1,4 @@
-package com.bielma.conf.ui.activities
+package com.bielma.conf.view.ui.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

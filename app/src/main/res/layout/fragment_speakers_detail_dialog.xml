@@ -1,92 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.fragments.SpeakersDetailDialogFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <androidx.cardview.widget.CardView
-        android:elevation="1dp"
-        app:cardCornerRadius="4dp"
-        android:layout_margin="15dp"
+<com.google.android.material.appbar.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<Toolbar
+    android:id="@+id/toolbarSpeakerDialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    />
+</com.google.android.material.appbar.AppBarLayout>
+
+
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        >
 
-
-        <LinearLayout
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:background="@drawable/shape_parrafo"
-            >
-            <ImageView
-                android:id="@+id/imgSpeakerFoto"
-                android:layout_marginTop="50dp"
+            android:layout_margin="15dp"
+            android:elevation="1dp"
+            app:cardCornerRadius="4dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/altoFoto"
-                android:src="@mipmap/ic_launcher"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_parrafo"
+                android:orientation="vertical">
 
-                />
-            <TextView
-                android:id="@+id/lblDetailNombreSpeaker"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Nombre Speaker"
-                android:textStyle="bold"
-                android:lines="1"
-                android:gravity="center_horizontal"
-                android:textSize="20sp"
-                android:textColor="@color/colorPrimary"
-                android:layout_margin="5dp"
-                />
-            <TextView
-                android:id="@+id/lblDetailTituloSpeaker"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Titulo"
-                android:lines="1"
-                android:gravity="center_horizontal"
-                android:textSize="20sp"
-                android:layout_margin="5dp"
-                />
-            <TextView
-                android:id="@+id/lblDetailTrabajoSpeaker"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Trabajo"
-                android:lines="1"
-                android:gravity="center_horizontal"
-                android:textSize="20sp"
-                android:layout_margin="5dp"
-                android:textColor="@color/colorPrimary"
-                />
+                <ImageView
+                    android:id="@+id/imgSpeakerFoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/altoFoto"
+                    android:layout_marginTop="50dp"
+                    android:src="@mipmap/ic_launcher"
 
-            <ImageView
-                android:layout_width="35dp"
-                android:layout_height="35dp"
-                android:layout_gravity="center_horizontal"
-                android:src="@drawable/ic_icons_twitter"
-                />
+                    />
 
+                <TextView
+                    android:id="@+id/lblDetailNombreSpeaker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center_horizontal"
+                    android:lines="1"
+                    android:text="Nombre Speaker"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
+                <TextView
+                    android:id="@+id/lblDetailTituloSpeaker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center_horizontal"
+                    android:lines="1"
+                    android:text="Titulo"
+                    android:textSize="20sp" />
 
-            <TextView
-                android:id="@+id/lblDetailDescSpeaker"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="blablabla"
-                android:gravity="center_horizontal"
-                android:textSize="15sp"
-                android:layout_margin="5dp"
-                android:textColor="@color/colorPrimary"
-                />
+                <TextView
+                    android:id="@+id/lblDetailTrabajoSpeaker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center_horizontal"
+                    android:lines="1"
+                    android:text="Trabajo"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/imgTwitter"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_icons_twitter" />
 
 
+                <TextView
+                    android:id="@+id/lblDetailDescSpeaker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:gravity="center_horizontal"
+                    android:text="blablabla"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp" />
 
-        </LinearLayout>
+
+            </LinearLayout>
 
 
-    </androidx.cardview.widget.CardView>
 
-</FrameLayout>
+        </ScrollView>
+
+        </androidx.cardview.widget.CardView>
+
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

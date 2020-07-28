@@ -1,4 +1,4 @@
-package com.bielma.conf.ui.fragments
+package com.bielma.conf.view.ui.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -14,10 +14,10 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [ScheduleDetailDialogFragment.newInstance] factory method to
+ * Use the [UbicationFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class ScheduleDetailDialogFragment : Fragment() {
+class UbicationFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -35,7 +35,7 @@ class ScheduleDetailDialogFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_schedule_detail_dialog, container, false)
+        return inflater.inflate(R.layout.fragment_ubication, container, false)
     }
 
     companion object {
@@ -45,12 +45,12 @@ class ScheduleDetailDialogFragment : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment ScheduleDetailDialogFragment.
+         * @return A new instance of fragment UbicationFragment.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            ScheduleDetailDialogFragment().apply {
+            UbicationFragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)
