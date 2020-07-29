@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat
 import androidx.fragment.app.DialogFragment
 import com.bielma.conf.R
 import com.bielma.conf.model.Speaker
@@ -38,7 +39,11 @@ class SpeakersDetailDialogFragment : DialogFragment() {
 
         val speaker = arguments?.getSerializable("speaker") as Speaker
         toolbarSpeakerDialog.title = speaker.name
+        toolbarSpeakerDialog.navigationIcon = ContextCompat.getDrawable(view.context, R.drawable.ic_baseline_close_24)
         toolbarSpeakerDialog.setTitleTextColor(Color.WHITE)
+        toolbarSpeakerDialog.setNavigationOnClickListener {
+            dismiss()
+        }
         lblDetailNombreSpeaker.text = speaker.name
         lblDetailTrabajoSpeaker.text = speaker.workPlace
         lblDetailTituloSpeaker.text = speaker.jobTitle

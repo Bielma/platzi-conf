@@ -25,7 +25,7 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_margin="15dp"
             android:elevation="1dp"
             app:cardCornerRadius="4dp">
@@ -43,7 +43,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/altoFoto"
                     android:layout_marginTop="50dp"
-                    android:src="@mipmap/ic_launcher"
+                    android:src="@drawable/ic_pin"
 
                     />
 

@@ -13,7 +13,7 @@ import kotlinx.android.synthetic.main.fragment_schedule_detail_dialog.*
 import java.text.SimpleDateFormat
 
 
-class ScheduleDetailDialogFragment : DialogFragment() {
+class ScheduleDetailDialogFragment: DialogFragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,7 +31,7 @@ class ScheduleDetailDialogFragment : DialogFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        toolbarConference.navigationIcon = ContextCompat.getDrawable(view.context, R.drawable.ic_baseline_close_24);
+       toolbarConference.navigationIcon = ContextCompat.getDrawable(view.context, R.drawable.ic_baseline_close_24);
         toolbarConference.setTitleTextColor(Color.WHITE)
         toolbarConference.setNavigationOnClickListener {
             dismiss()

@@ -57,9 +57,9 @@
 
    <dialog
         android:id="@+id/scheduleDetailFragmentDialog"
-        android:name="com.bielma.conf.view.ui.fragments.SpeakersDetailDialogFragment"
-       tools:layout="@layout/fragment_schedule_detail_dialog"
-       android:label="ScheduleDetailFragmentDialog"
+        android:name="com.bielma.conf.view.ui.fragments.ScheduleDetailDialogFragment"
+        tools:layout="@layout/fragment_schedule_detail_dialog"
+        android:label="ScheduleDetailFragmentDialog"
        />
 
     <dialog
