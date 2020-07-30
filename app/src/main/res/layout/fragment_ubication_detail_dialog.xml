@@ -8,7 +8,7 @@
         android:layout_height="wrap_content">
 
         <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbarConference"
+            android:id="@+id/toolbarLocation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
     </com.google.android.material.appbar.AppBarLayout>
@@ -74,38 +74,41 @@
                                 />
 
                             <TextView
+                                android:id="@+id/lblDetailAddress"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:gravity="left"
                                 android:text="Dirección"
                                 android:textColor="@color/colorPrimary"
-                                android:textSize="15sp"
-                                android:gravity="left"
-                                android:layout_margin="5dp"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"/>
+                                android:textSize="15sp" />
                         </LinearLayout>
                         <View
                             android:layout_width="match_parent"
                             android:layout_height="1dp"
                             android:background="@color/colorPrimary"/>
+
                         <LinearLayout
-                            android:padding="20dp"
+                            android:id="@+id/abrirTelefono"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal">
+                            android:orientation="horizontal"
+                            android:padding="20dp">
 
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:src="@drawable/ic_phone"
-                                />
+                                android:src="@drawable/ic_phone" />
 
                             <TextView
-                                android:text="Telefono"
-                                android:gravity="left"
-                                android:textColor="@color/colorPrimary"
-                                android:textSize="15sp"
+                                android:id="@+id/lblDetailPhone"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="5dp"/>
+                                android:layout_margin="5dp"
+                                android:gravity="left"
+                                android:text="Telefono"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="15sp" />
 
 
                         </LinearLayout>
@@ -113,22 +116,25 @@
                             android:layout_width="match_parent"
                             android:layout_height="1dp"
                             android:background="@color/colorPrimary"/>
+
                         <LinearLayout
-                            android:padding="20dp"
+                            android:id="@+id/abrirWeb"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:orientation="horizontal">
+                            android:orientation="horizontal"
+                            android:padding="20dp">
 
                             <TextView
+                                android:id="@+id/lblDetailWeb"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
                                 android:drawableLeft="@drawable/ic_link"
                                 android:drawablePadding="5dp"
-                                android:textColor="@color/colorPrimary"
-                                android:textSize="15sp"
-                                android:text="Sitio"
                                 android:gravity="left"
-                                android:layout_margin="5dp"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"/>
+                                android:text="Sitio"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="15sp" />
                         </LinearLayout>
                         <View
                             android:layout_width="match_parent"
