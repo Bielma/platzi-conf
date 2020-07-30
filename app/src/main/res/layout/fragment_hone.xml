@@ -47,6 +47,7 @@
                        android:layout_marginRight="@dimen/margenHomeSub"
                        android:layout_marginLeft="@dimen/margenHomeSub"
                        android:layout_marginTop="@dimen/margenHomeSub"
+
                        />
                    <View
                        android:layout_marginTop="@dimen/margenHomeSub"
@@ -62,32 +63,38 @@
                        android:layout_marginRight="@dimen/margenHomeSub"
                        android:layout_marginLeft="@dimen/margenHomeSub"
                        android:layout_marginTop="@dimen/margenHomeSub"
+                       android:layout_marginBottom="10dp"
                        />
-                   <ImageView
-                       android:layout_marginTop="10dp"
-                       android:layout_width="wrap_content"
-                       android:layout_height="@dimen/altoFoto"
-                       android:src="@drawable/platzi_conf_2"/>
-                   <View
-                       android:layout_marginTop="@dimen/margenHomeSub"
-                       android:layout_width="match_parent"
-                       android:layout_height="1dp"
-                       android:background="@color/colorPrimary"/>
+
                </LinearLayout>
            </androidx.cardview.widget.CardView>
            <androidx.cardview.widget.CardView
+
                android:layout_width="match_parent"
                android:layout_height="wrap_content"
                app:cardCornerRadius="@dimen/radioCard"
                app:cardElevation="0dp"
-               android:layout_margin="15dp">
+               android:layout_marginLeft="15dp"
+               android:layout_marginRight="15dp"
+               >
                <LinearLayout
                    android:layout_width="match_parent"
                    android:layout_height="match_parent"
                    android:orientation="vertical"
                    android:background="@drawable/shape_parrafo"
                    >
-
+                   <ImageView
+                       android:layout_marginTop="10dp"
+                       android:layout_width="wrap_content"
+                       android:layout_height="@dimen/altoFoto"
+                       android:src="@drawable/platzi_conf_2"
+                       android:scaleType="centerCrop"
+                       />
+                   <View
+                       android:layout_marginTop="@dimen/margenHomeSub"
+                       android:layout_width="match_parent"
+                       android:layout_height="1dp"
+                       android:background="@color/colorPrimary"/>
                <TextView
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
@@ -119,7 +126,9 @@
                        android:layout_marginTop="10dp"
                        android:layout_width="wrap_content"
                        android:layout_height="@dimen/altoFoto"
-                       android:src="@drawable/platzi_conf_3"/>
+                       android:src="@drawable/platzi_conf_3"
+                        android:scaleType="centerCrop"
+                       />
                    <View
                        android:layout_marginTop="@dimen/margenHomeSub"
                        android:layout_width="match_parent"

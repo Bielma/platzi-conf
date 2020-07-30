@@ -60,6 +60,10 @@
                             android:layout_margin="5dp"
                             android:textStyle="bold"
                             />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/colorPrimary"/>
                         
                         <LinearLayout
                             android:padding="20dp"

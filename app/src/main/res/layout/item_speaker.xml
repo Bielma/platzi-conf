@@ -10,12 +10,21 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+
+        >
+
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/imgItemSpeakeFoto"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/altoFoto"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
             android:src="@mipmap/ic_launcher" />
 
         <TextView
